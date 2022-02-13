@@ -13,7 +13,7 @@ class MovieProvider {
     weak var delegate: MovieProviderProtocol?
     
     func getMovies(page: Int) {
-        networkManager.request(.getMovies(page: 1)) { (response) in
+        networkManager.request(.getMovies(page: page)) { (response) in
             NetworkResponseParser.parse(result: response,
                                         completion: { (parseResult: ServerResult<MovieList>) in
                 switch parseResult {

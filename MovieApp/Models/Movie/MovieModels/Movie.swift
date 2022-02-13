@@ -8,10 +8,18 @@
 import Foundation
 
 struct Movie: Codable {
-    var poster_path: String
+    var posterPath: String
     var overview: String
-    var release_date: String
+    var releaseDate: String
     var id: Int
-    var original_title: String
+    var originalTitle: String
+    
+    private enum CodingKeys : String, CodingKey {
+        case posterPath = "poster_path"
+        case overview
+        case releaseDate = "release_date"
+        case id
+        case originalTitle = "original_title"
+    }
 }
 

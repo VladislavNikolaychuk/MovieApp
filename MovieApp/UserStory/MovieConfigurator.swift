@@ -13,11 +13,11 @@ class MovieConfigurator {
         let presenter = MoviePresenter()
         let router = MovieRouter()
         let interactor = MovieInteractor()
+        view.presenter = presenter
+        interactor.presenter = presenter
         presenter.view = view
         presenter.router = router
         presenter.interactor = interactor
-        view.presenter = presenter
-        interactor.presenter = presenter
         return view
     }
 }

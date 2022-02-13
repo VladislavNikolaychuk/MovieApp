@@ -8,11 +8,16 @@
 import Foundation
 
 class MovieInteractor: MovieInteractorInputProtocol {
+    
     weak var presenter: MovieInteractorOutputProtocol!
-    var movieProvider = MovieProvider()
+    let movieProvider = MovieProvider()
     
     init() {
         movieProvider.delegate = self
+    }
+    
+    func getMovies(page: Int) {
+        self.movieProvider.getMovies(page: page)
     }
 }
 

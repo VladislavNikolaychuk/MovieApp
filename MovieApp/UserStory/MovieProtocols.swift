@@ -12,10 +12,12 @@ protocol MoviePresenterProtocol: AnyObject {
     var interactor: MovieInteractorInputProtocol! {get set}
     var view: MovieViewProtocol! {get set}
     var router: MovieRouterProtocol! {get set}
+    func getMovies(page: Int)
 }
 
 protocol MovieViewProtocol: AnyObject {
     var presenter: MoviePresenterProtocol! {get set}
+    func updateTableView(movies: [Movie])
     
 }
 
@@ -27,12 +29,10 @@ protocol MovieInteractorOutputProtocol: AnyObject {
 
 protocol MovieInteractorInputProtocol: AnyObject {
     var presenter: MovieInteractorOutputProtocol! {get set}
-    func getMovies(movies: [Movie])
+    func getMovies(page: Int)
 }
 
-protocol MovieRouterProtocol: AnyObject {
-    
-}
+protocol MovieRouterProtocol: AnyObject {}
 
 protocol MovieProviderProtocol: AnyObject {
     func getMovies(movies: [Movie])

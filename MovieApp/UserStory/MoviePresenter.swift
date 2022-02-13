@@ -9,17 +9,19 @@ import Foundation
 
 class MoviePresenter {
     var interactor: MovieInteractorInputProtocol!
-    var view: MovieViewProtocol!
+    weak var view: MovieViewProtocol!
     var router: MovieRouterProtocol!
 }
 
 extension MoviePresenter: MoviePresenterProtocol {
-    
+    func getMovies(page: Int) {
+        self.interactor.getMovies(page: page)
+    }
 }
 
 extension MoviePresenter: MovieInteractorOutputProtocol {
     func getMovies(movies: [Movie]) {
-        
+        self.view.updateTableView(movies: movies)
     }
     
     func movieDownloadError(error: String) {
