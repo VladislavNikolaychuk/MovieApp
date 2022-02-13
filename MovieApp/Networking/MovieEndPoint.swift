@@ -59,14 +59,10 @@ extension MovieEndPoint: TargetType {
         }
     
     private enum HTTPHeader {
-        static let authorization = "Authorization"
         static let contentType = "Content-Type"
-        static let accept = "Accept"
     }
 
     private enum HTTPContentType {
         static let json = "application/json"
-        static let multipartFormData = "multipart/form-data"
-        static let imageJpeg = "image/jpeg"
     }
 }

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,20 +27,20 @@
                                     <constraint firstAttribute="height" constant="300" id="sks-oR-UFF"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-QM-DYd">
-                                <rect key="frame" x="48" y="310" width="256" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsM-QM-DYd">
+                                <rect key="frame" x="48" y="310" width="256" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypm-oH-reS">
-                                <rect key="frame" x="262.5" y="494" width="41.5" height="21"/>
+                                <rect key="frame" x="282.5" y="494" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqi-sY-Qud">
-                                <rect key="frame" x="20" y="341" width="312" height="20.5"/>
+                                <rect key="frame" x="20" y="340.5" width="312" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,7 +49,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gqi-sY-Qud" firstAttribute="leading" secondItem="FtM-gX-4H1" secondAttribute="leading" constant="20" id="14O-dh-Xf8"/>
-                            <constraint firstItem="Ypm-oH-reS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FtM-gX-4H1" secondAttribute="leading" constant="40" id="BTO-Ot-jKE"/>
+                            <constraint firstItem="Ypm-oH-reS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FtM-gX-4H1" secondAttribute="leading" constant="20" id="BTO-Ot-jKE"/>
                             <constraint firstItem="uBW-tk-tCz" firstAttribute="leading" secondItem="FtM-gX-4H1" secondAttribute="leading" constant="20" id="Gom-6O-Ee7"/>
                             <constraint firstItem="YsM-QM-DYd" firstAttribute="leading" secondItem="FtM-gX-4H1" secondAttribute="leadingMargin" constant="40" id="GpN-mO-6vC"/>
                             <constraint firstItem="YsM-QM-DYd" firstAttribute="centerX" secondItem="uBW-tk-tCz" secondAttribute="centerX" id="bk4-I4-mBv"/>
@@ -60,7 +61,7 @@
                             <constraint firstItem="uBW-tk-tCz" firstAttribute="top" secondItem="FtM-gX-4H1" secondAttribute="top" id="nTF-3q-kKU"/>
                             <constraint firstItem="Ypm-oH-reS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Gqi-sY-Qud" secondAttribute="bottom" constant="10" id="pD5-dI-aE1"/>
                             <constraint firstAttribute="trailing" secondItem="Gqi-sY-Qud" secondAttribute="trailing" constant="20" id="t8N-CH-ift"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ypm-oH-reS" secondAttribute="trailing" constant="40" id="xS6-nY-qhJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ypm-oH-reS" secondAttribute="trailing" constant="20" id="xS6-nY-qhJ"/>
                             <constraint firstAttribute="trailing" secondItem="uBW-tk-tCz" secondAttribute="trailing" constant="20" id="zFn-mq-NbY"/>
                         </constraints>
                     </view>

@@ -25,6 +25,7 @@ extension MoviePresenter: MovieInteractorOutputProtocol {
     }
     
     func movieDownloadError(error: String) {
+        self.view.showAlert(errorMessage: error)
     }
     
 }

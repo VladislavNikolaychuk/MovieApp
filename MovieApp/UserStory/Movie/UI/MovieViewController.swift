@@ -45,4 +45,11 @@ extension MovieViewController: MovieViewProtocol {
           tableView.insertRows(at: indexPathes, with: .bottom)
           tableView.tableFooterView?.isHidden = true
      }
+    
+    func showAlert(errorMessage: String) {
+        let alert = UIAlertController(title: "Failed to load", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true)
+        tableView.tableFooterView?.isHidden = true
+    }
 }
